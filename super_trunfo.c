@@ -14,7 +14,7 @@ int main(){
      float pib[2];
 
 
-     //----- PRIMEIRA CARTA -----
+     //------ PRIMEIRA CARTA ------
 
      printf("Informe os dados da primeira carta \n\n");
      // Para adicionar novos atributos à Carta 1, adcione conforme o exemplo:
@@ -57,7 +57,7 @@ int main(){
      printf("Número de Pontos Turísticos: %d\n\n", pontos_turisticos[0]);
      
      
-     //----- SEGUNDA CARTA -----
+     //------ SEGUNDA CARTA ------
 
      printf("Informe os dados da segunda carta: \n\n");
      // Para adicionar novos atributos à Carta 2, adcione conforme o exemplo:
