@@ -32,25 +32,18 @@ int main(){
 
      printf("Estado: ");
      scanf("%c", &estado1);
-
      printf("Código: ");
      scanf("%s", codigo1);// Por ser string não é necessário o "&".
-
      getchar(); 
-
      printf("Nome da Cidade: ");
      fgets(cidade1, 30, stdin);
      cidade1[strcspn(cidade1, "\n")]='\0';//Use o *='\0'*, para não deixar o espaço em branco apos *Popuação*.
-
      printf("População: ");
      scanf("%u", &populacao[0]);
-
      printf("Área (em km²): ");
      scanf("%f", &area[0]);
-
      printf("PIB (em bihões): ");
      scanf("%f", &pib[0]);
-
      printf("Número de Pontos Turísticos: ");
      scanf("%u", &pontos_turisticos[0]);
 
@@ -94,25 +87,18 @@ int main(){
 
      printf("Estado: ");
      scanf(" %c", &estado2);  // O espaço antes de %c descarta o '\n' (Enter) deixado pelo scanf anterior no buffer.
-
      printf("Código: ");
      scanf("%s", codigo2);
-     
      getchar();
-     
      printf("Nome da Cidade: ");
      fgets(cidade2, 30, stdin);
      cidade2[strcspn(cidade2, "\n")]='\0';
-     
      printf("População: ");
      scanf("%u", &populacao[1]);
-     
      printf("Área (em km²): ");
      scanf("%f", &area[1]);
-     
      printf("PIB (em bilhões): ");
      scanf("%f", &pib[1]);
-     
      printf("Número de Pontos Turísticos: ");
      scanf("%u", &pontos_turisticos[1]);
 
