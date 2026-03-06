@@ -4,7 +4,15 @@
  
 int main(){
 
-     // Declaração de variáveis utilizando arrays, nas variáveis de int e float, para armazenar dados de múltiplas cartas.
+   /*
+   ####################################################
+   #                    DECLARAÇÃO                    #
+   #                        DE                        #
+   #                    VARIÁVEIS                     # 
+   ####################################################
+   */
+
+     // Utilização de arrays, nas variáveis de int e float, para armazenar dados de múltiplas cartas.
      // Será usado o índice [0] para Carta 1 e o índice [1] para Carta 2.
 
      char estado1, estado2;
@@ -16,12 +24,16 @@ int main(){
      float pib[2];
      float pib_per[2], populcao_den[2];
      float super_poder[2];
-     int escolha;  // Adicionado a Variável "int escolha" para utilização do menu no final
+     int escolha;  //Variável "int escolha" para utilização do menu no final
      
 
 
-
-     //------ PRIMEIRA CARTA ------
+   /*
+   ################################################
+   #                   PRIMEIRA                   #
+   #                    CARTA                     # 
+   ################################################
+   */
 
      printf("Informe os dados da primeira carta \n\n");
      /*Para adicionar novos atributos à Carta 1, adcione conforme o exemplo:
@@ -56,7 +68,13 @@ int main(){
      super_poder[0] = (float) populacao[0] + (float) pontos_turisticos[0] + pib[0] + area[0] + pib_per[0] + (1 / populcao_den[0]); 
 
      
-     // ---APRESENTAÇÃO DA CARTA 1---
+   /*
+   ##################################################
+   #                   APRESENTAÇÃO                 #
+   #                        DA                      #
+   #                      CARTA                     # 
+   ##################################################
+   */
      //*TODOS* os atributos adicionados terão de aparecer na apresentação da carta.
      /* Exemplo:
       printf("\nCarta 1\n");
@@ -76,7 +94,12 @@ int main(){
      
      
 
-     //------ SEGUNDA CARTA ------
+   /*
+   ################################################
+   #                   SEGUNDA                    #
+   #                    CARTA                     # 
+   ################################################
+   */
 
      printf("Informe os dados da segunda carta: \n\n");
      /* Para adicionar novos atributos à Carta 2, adcione conforme o exemplo:
@@ -110,7 +133,13 @@ int main(){
      populcao_den[1] = (float) populacao[1] / area[1];
      super_poder[1] = (float) populacao[1] + (float) pontos_turisticos[1] + pib[1] + area[1] + pib_per[1] + (1 / populcao_den[1]); 
      
-     // ---APRESENTAÇÃO DA CARTA 2---
+   /*
+   ##################################################
+   #                   APRESENTAÇÃO                 #
+   #                        DA                      #
+   #                      CARTA                     # 
+   ##################################################
+   */    
      //*TODOS* os atributos adicionados terão de aparecer na apresentação da carta.
      /* Exemplo:
       printf("\nCarta 2\n");
@@ -132,7 +161,7 @@ int main(){
 
      //Placar Vencedor:
 
-     printf("##Comparação de Cartas: ##\n\n");
+     printf("## Comparação de Cartas: ##\n\n");
 
      // Menu por meio do switch 
 
@@ -148,6 +177,7 @@ int main(){
 
      printf("Escolha o Atributo a ser comparado: ");
      scanf("%d", &escolha); 
+
 
      switch (escolha){
 
