@@ -75,7 +75,7 @@ int main(){
    ##################################################
    #                   APRESENTAÇÃO                 #
    #                        DA                      #
-   #                      CARTA                     # 
+   #                     1ªCARTA                    # 
    ##################################################
    */
      //*TODOS* os atributos adicionados terão de aparecer na apresentação da carta.
@@ -140,7 +140,7 @@ int main(){
    ##################################################
    #                   APRESENTAÇÃO                 #
    #                        DA                      #
-   #                      CARTA                     # 
+   #                     2ªCARTA                    # 
    ##################################################
    */    
      //*TODOS* os atributos adicionados terão de aparecer na apresentação da carta.
@@ -165,8 +165,7 @@ int main(){
    /*
    ##################################################
    #                   COMPARAÇÃO                   #
-   #                      DAS                       #
-   #                    CARTAS                      # 
+   #                   DAS CARTAS                   # 
    ##################################################
    */    
      printf("## Comparação de Cartas: ##\n\n");
@@ -180,7 +179,8 @@ int main(){
      ##############################################
      */    
 
-     printf("Atributos: \n\n");
+     printf("1ª Rodada!! \n\n");
+     printf("Atributos: \n");
      printf("1. População\n");
      printf("2. Área\n");
      printf("3. PIB\n");
@@ -318,7 +318,9 @@ int main(){
      #                  ATRIBUTO                  #
      ##############################################
      */    
-     printf("Atributos: \n\n");
+
+     printf("2ª Rodada!! \n\n");
+     printf("Atributos: \n");
      printf("1. População\n");
      printf("2. Área\n");
      printf("3. PIB\n");
@@ -469,15 +471,17 @@ int main(){
         //carta 1 ganhou a soma
          printf(" A Soma dos Atributos foi:\n");
          printf(" Carta 1 (%s): %.2f\n", cidade1, soma_atributos[0]);
+         printf(" Carta 2 (%s): %.2f\n", cidade2, soma_atributos[1]);
          printf(" Parabéns!! A Carta 1 (%s) Ganhou a Rodada!!\n\n", cidade1);
      } else if(soma_atributos[0] < soma_atributos[1]){
         //carta 2 ganhou a soma
          printf(" A Soma dos Atributos foi:\n");
+         printf(" Carta 1 (%s): %.2f\n", cidade1, soma_atributos[0]);
          printf(" Carta 2 (%s): %.2f\n", cidade2, soma_atributos[1]);
          printf(" Parabéns!! A Carta 2 (%s) Ganhou a Rodada!!\n\n", cidade2);
      } else {
         // empate
-         printf(" Deu Empate!!");
+         printf(" Deu Empate!!\n\n");
      }
 
      return 0;
